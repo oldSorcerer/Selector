@@ -1,8 +1,6 @@
 package io.sancta.sanctorum;
 
 import java.util.ArrayList;
-import java.util.Collections;
-import java.util.Comparator;
 import java.util.List;
 
 public class Selector {
@@ -69,6 +67,4 @@ public class Selector {
 
         findNames.forEach(System.out::println);
     }
-
-
 }
