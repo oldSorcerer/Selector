@@ -1,15 +1,18 @@
 package io.sancta.sanctorum;
 
+import lombok.AccessLevel;
 import lombok.Getter;
+import lombok.experimental.FieldDefaults;
 
 import java.util.ArrayList;
 import java.util.List;
 
+@FieldDefaults(level = AccessLevel.PRIVATE)
 public class Owner {
 
-    private final String name;
+    final String name;
     @Getter
-    private final List<Animal> pets = new ArrayList<>();
+    final List<Animal> pets = new ArrayList<>();
 
     public Owner(String name) {
         this.name = name;
